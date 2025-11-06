@@ -1,5 +1,17 @@
-#include "C:/Wichtig/System/Static/Container/BinTree.h"
-#include "C:/Wichtig/System/Static/Container/Tree.h"
+#if defined(__linux__)
+#include "/home/codeleaded/System/Static/Container/BinTree.h"
+#include "/home/codeleaded/System/Static/Container/Tree.h"
+#elif defined(_WINE)
+#include "/home/codeleaded/System/Static/Container/BinTree.h"
+#include "/home/codeleaded/System/Static/Container/Tree.h"
+#elif defined(_WIN32)
+#include "F:/home/codeleaded/System/Static/Container/BinTree.h"
+#include "F:/home/codeleaded/System/Static/Container/Tree.h"
+#elif defined(__APPLE__)
+#error "Apple not supported!"
+#else
+#error "Platform not supported!"
+#endif
 
 int main(){
 
